@@ -1,0 +1,38 @@
+# Business Analytics Application: 
+Time series forecasting is highly used in business. A company can forecast its sales, demands of customers, stock returns, exchange rate etc. By forecasting 
+the values, the company can manage its future plan and perspectives.
+
+## DATA: 
+China Trade data shows statistics of US imports from China from year 1990 to 2012. The data is published by US Census Bureau, Foreign Trade Division. 
+It is yearly data for 23 years. The amount of imports rose after 2000. There is an upward shift in import in recent period.
+
+### DESCRIPTION: 
+Products sold, Daily Covid Cases, GDP of an economy, Daily exchange rate etc.--- are saved throughout a time period (say, monthly, yearly, daily etc). 
+These are called Time Series Data. We take the values that are given and then forecast or predict values for some future period. We fit trend lines. There are some 
+rules for fitting the trend line:
+i. Values are increasing at a constant rate ---- linear trend line (example- Annual Salary increments)
+ii. Values are increasing at an increasing rate --- Exponential or Power (example- Covid cases during the beginning of 2nd wave in India)
+iii. Values are increasing at a decreasing rate --- Logarithmic trend line (example- After reaching a certain level, the growth rate of an economy flattens i.e. at steady sate)
+iv. Both increasing and decreasing—Polynomial trend line (example- Covid cases of last 16 months of India)
+
+#### RESULTS & DISCUSSIONS: 
+For Time Series Forecasting, MS EXCEL is the best and easiest way to analyse.
+The value of 𝑅2 is the measure of the “fit” of the line. The larger the value of 𝑅2, the better the fit.We have found the different trend line equations 
+from EXCEL. We have taken polynomial of 2nd and 3rd order. Higher order equations make the calculations complex.
+LINEAR                           y=19.545x-68.394                              𝑅^2=0.9188
+EXPONENTIAL                    y=17.062e^0.1525x                               𝑅^2=0.9792
+LOGARITHMIC                   y=134.33ln(x)-136.35                             𝑅^2=0.6505 
+POLYNOMIAL(2nd order)        y=0.8297(x)^2-0.4601x+14.581                      𝑅^2=0.9773 
+POLYNOMIAL(3rd order)      y=-0.0325(x)^3+1.9984(x)^2-11.919x+39.902           𝑅^2=0.9803
+POWER                           y=7.0652(x)^1.2087                             R^2=0.913
+
+We can clearly observe that, 𝑅2 value is maximum on Polynomial of 3rd order. This equation can best fit the model. We have also drawn trend line on the line diagram.
+POLYNOMIAL(3rd order)
+Forested Value(2015)           509.7064
+Forested Value(2016)           535.2251
+Forecasted Value(2018)         582.2629
+For 2015, the value of x is 23+3=26, for 2016, it is 27 and so on…
+
+##### RESULTS AND DISCUSSION: 
+It provides future predictions to the company or business. For a certain year, a company can predict its sales figures. This a very useful tool for 
+the company for long-term planning.
